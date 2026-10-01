@@ -1,0 +1,11 @@
+{
+  "grid":            true,
+  "charts":          true,
+  "orderbook":       true,
+  "trade":           true,
+  "gridbotplus":     true,
+  "ai":              true,
+  "auth":            true,
+  "profile":         true,
+  "market_selector": true
+}

@@ -1,0 +1,6 @@
+{
+  "identifier": "default",
+  "description": "Local grid terminal",
+  "windows": ["main"],
+  "permissions": ["core:default"]
+}

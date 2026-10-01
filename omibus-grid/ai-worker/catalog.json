@@ -1,0 +1,488 @@
+{
+  "version": 3,
+  "default_inputs": [
+    "rsi",
+    "ema",
+    "macd",
+    "head_shoulders",
+    "inverse_head_shoulders"
+  ],
+  "inputs": [
+    {
+      "id": "sma",
+      "label": "SMA 20",
+      "kind": "indicator",
+      "features": [
+        "sma_distance"
+      ],
+      "series": [
+        "sma20"
+      ]
+    },
+    {
+      "id": "ema",
+      "label": "EMA 12 / 26",
+      "kind": "indicator",
+      "features": [
+        "ema_spread",
+        "ema_fast_distance",
+        "ema_slow_distance"
+      ],
+      "series": [
+        "ema12",
+        "ema26"
+      ]
+    },
+    {
+      "id": "macd",
+      "label": "MACD 12 / 26 / 9",
+      "kind": "indicator",
+      "features": [
+        "macd_histogram"
+      ],
+      "series": [
+        "macd",
+        "macd_signal",
+        "macd_histogram"
+      ]
+    },
+    {
+      "id": "rsi",
+      "label": "RSI 14",
+      "kind": "indicator",
+      "features": [
+        "rsi"
+      ],
+      "series": [
+        "rsi"
+      ]
+    },
+    {
+      "id": "bollinger",
+      "label": "Bollinger Bands 20 / 2",
+      "kind": "indicator",
+      "features": [
+        "bollinger_z",
+        "bollinger_width"
+      ],
+      "series": [
+        "bb_upper",
+        "bb_mid",
+        "bb_lower"
+      ]
+    },
+    {
+      "id": "atr",
+      "label": "ATR 14",
+      "kind": "indicator",
+      "features": [
+        "atr_pct"
+      ],
+      "series": [
+        "atr"
+      ]
+    },
+    {
+      "id": "stochastic",
+      "label": "Stochastic %K 14",
+      "kind": "indicator",
+      "features": [
+        "stochastic"
+      ],
+      "series": [
+        "stochastic"
+      ]
+    },
+    {
+      "id": "williams",
+      "label": "Williams %R 14",
+      "kind": "indicator",
+      "features": [
+        "williams_r"
+      ],
+      "series": [
+        "williams_r"
+      ]
+    },
+    {
+      "id": "cci",
+      "label": "CCI 20",
+      "kind": "indicator",
+      "features": [
+        "cci"
+      ],
+      "series": [
+        "cci"
+      ]
+    },
+    {
+      "id": "roc",
+      "label": "ROC 12",
+      "kind": "indicator",
+      "features": [
+        "roc_12"
+      ],
+      "series": [
+        "roc"
+      ]
+    },
+    {
+      "id": "momentum",
+      "label": "Momentum 10",
+      "kind": "indicator",
+      "features": [
+        "momentum_10"
+      ],
+      "series": [
+        "momentum"
+      ]
+    },
+    {
+      "id": "adx",
+      "label": "ADX / DI 14",
+      "kind": "indicator",
+      "features": [
+        "adx",
+        "directional_balance"
+      ],
+      "series": [
+        "adx",
+        "di_plus",
+        "di_minus"
+      ]
+    },
+    {
+      "id": "mfi",
+      "label": "MFI 14",
+      "kind": "indicator",
+      "features": [
+        "mfi"
+      ],
+      "series": [
+        "mfi"
+      ]
+    },
+    {
+      "id": "obv",
+      "label": "OBV flow 20",
+      "kind": "indicator",
+      "features": [
+        "obv_flow"
+      ],
+      "series": [
+        "obv_flow"
+      ]
+    },
+    {
+      "id": "vwap",
+      "label": "Rolling VWAP 20",
+      "kind": "indicator",
+      "features": [
+        "vwap_distance"
+      ],
+      "series": [
+        "vwap"
+      ]
+    },
+    {
+      "id": "cmf",
+      "label": "Chaikin Money Flow 20",
+      "kind": "indicator",
+      "features": [
+        "cmf"
+      ],
+      "series": [
+        "cmf"
+      ]
+    },
+    {
+      "id": "donchian",
+      "label": "Donchian 20",
+      "kind": "indicator",
+      "features": [
+        "donchian_position"
+      ],
+      "series": [
+        "donchian_high",
+        "donchian_low"
+      ]
+    },
+    {
+      "id": "keltner",
+      "label": "Keltner 20 / 2",
+      "kind": "indicator",
+      "features": [
+        "keltner_position"
+      ],
+      "series": [
+        "keltner_high",
+        "keltner_mid",
+        "keltner_low"
+      ]
+    },
+    {
+      "id": "aroon",
+      "label": "Aroon 25",
+      "kind": "indicator",
+      "features": [
+        "aroon_balance"
+      ],
+      "series": [
+        "aroon_up",
+        "aroon_down"
+      ]
+    },
+    {
+      "id": "volatility",
+      "label": "Realized volatility 20",
+      "kind": "indicator",
+      "features": [
+        "realized_volatility"
+      ],
+      "series": [
+        "volatility"
+      ]
+    },
+    {
+      "id": "price_action",
+      "label": "Candle shapes, returns & volume",
+      "kind": "price",
+      "features": [
+        "return_1",
+        "return_3",
+        "body",
+        "upper_wick",
+        "lower_wick",
+        "volume_ratio",
+        "range_pct",
+        "inside_bar",
+        "engulfing"
+      ],
+      "series": [
+        "volume"
+      ]
+    },
+    {
+      "id": "head_shoulders",
+      "label": "Head & shoulders",
+      "kind": "pattern",
+      "features": [
+        "pattern_head_shoulders"
+      ],
+      "series": []
+    },
+    {
+      "id": "inverse_head_shoulders",
+      "label": "Inverse head & shoulders",
+      "kind": "pattern",
+      "features": [
+        "pattern_inverse_head_shoulders"
+      ],
+      "series": []
+    },
+    {
+      "id": "double_top",
+      "label": "Double top",
+      "kind": "pattern",
+      "features": [
+        "pattern_double_top"
+      ],
+      "series": []
+    },
+    {
+      "id": "double_bottom",
+      "label": "Double bottom",
+      "kind": "pattern",
+      "features": [
+        "pattern_double_bottom"
+      ],
+      "series": []
+    },
+    {
+      "id": "triple_top",
+      "label": "Triple top",
+      "kind": "pattern",
+      "features": [
+        "pattern_triple_top"
+      ],
+      "series": []
+    },
+    {
+      "id": "triple_bottom",
+      "label": "Triple bottom",
+      "kind": "pattern",
+      "features": [
+        "pattern_triple_bottom"
+      ],
+      "series": []
+    },
+    {
+      "id": "ascending_triangle",
+      "label": "Ascending triangle",
+      "kind": "pattern",
+      "features": [
+        "pattern_ascending_triangle"
+      ],
+      "series": []
+    },
+    {
+      "id": "descending_triangle",
+      "label": "Descending triangle",
+      "kind": "pattern",
+      "features": [
+        "pattern_descending_triangle"
+      ],
+      "series": []
+    },
+    {
+      "id": "symmetrical_triangle",
+      "label": "Symmetrical triangle",
+      "kind": "pattern",
+      "features": [
+        "pattern_symmetrical_triangle"
+      ],
+      "series": []
+    },
+    {
+      "id": "rising_wedge",
+      "label": "Rising wedge",
+      "kind": "pattern",
+      "features": [
+        "pattern_rising_wedge"
+      ],
+      "series": []
+    },
+    {
+      "id": "falling_wedge",
+      "label": "Falling wedge",
+      "kind": "pattern",
+      "features": [
+        "pattern_falling_wedge"
+      ],
+      "series": []
+    },
+    {
+      "id": "bull_flag",
+      "label": "Bull flag",
+      "kind": "pattern",
+      "features": [
+        "pattern_bull_flag"
+      ],
+      "series": []
+    },
+    {
+      "id": "bear_flag",
+      "label": "Bear flag",
+      "kind": "pattern",
+      "features": [
+        "pattern_bear_flag"
+      ],
+      "series": []
+    },
+    {
+      "id": "bull_pennant",
+      "label": "Bull pennant",
+      "kind": "pattern",
+      "features": [
+        "pattern_bull_pennant"
+      ],
+      "series": []
+    },
+    {
+      "id": "bear_pennant",
+      "label": "Bear pennant",
+      "kind": "pattern",
+      "features": [
+        "pattern_bear_pennant"
+      ],
+      "series": []
+    },
+    {
+      "id": "rectangle",
+      "label": "Rectangle",
+      "kind": "pattern",
+      "features": [
+        "pattern_rectangle"
+      ],
+      "series": []
+    },
+    {
+      "id": "rising_channel",
+      "label": "Rising channel",
+      "kind": "pattern",
+      "features": [
+        "pattern_rising_channel"
+      ],
+      "series": []
+    },
+    {
+      "id": "falling_channel",
+      "label": "Falling channel",
+      "kind": "pattern",
+      "features": [
+        "pattern_falling_channel"
+      ],
+      "series": []
+    },
+    {
+      "id": "cup_handle",
+      "label": "Cup & handle",
+      "kind": "pattern",
+      "features": [
+        "pattern_cup_handle"
+      ],
+      "series": []
+    },
+    {
+      "id": "inverse_cup_handle",
+      "label": "Inverse cup & handle",
+      "kind": "pattern",
+      "features": [
+        "pattern_inverse_cup_handle"
+      ],
+      "series": []
+    }
+  ],
+  "intervals": [
+    {
+      "id": "1m",
+      "label": "1 minute",
+      "ms": 60000
+    },
+    {
+      "id": "5m",
+      "label": "5 minutes",
+      "ms": 300000
+    },
+    {
+      "id": "15m",
+      "label": "15 minutes",
+      "ms": 900000
+    },
+    {
+      "id": "30m",
+      "label": "30 minutes",
+      "ms": 1800000
+    },
+    {
+      "id": "1h",
+      "label": "1 hour",
+      "ms": 3600000
+    },
+    {
+      "id": "4h",
+      "label": "4 hours",
+      "ms": 14400000
+    },
+    {
+      "id": "1d",
+      "label": "1 day",
+      "ms": 86400000
+    },
+    {
+      "id": "1w",
+      "label": "1 week",
+      "ms": 604800000
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[package]
+name = "omnibus-exchange"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+omnibus-core = { path = "../omnibus-core" }
+
+tokio = { workspace = true }
+async-trait = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+reqwest = { workspace = true }
+hmac = { workspace = true }
+sha2 = { workspace = true }
+base64 = { workspace = true }
+hex = { workspace = true }
+chrono = { workspace = true }
+tracing = { workspace = true }
+tokio-tungstenite = { workspace = true }
+futures-util = { workspace = true }
+parking_lot = { workspace = true }
+dashmap = { workspace = true }
+sha1 = { workspace = true }
+serde_urlencoded = "0.7"
+urlencoding = "2.1"
+p256 = { version = "0.13", features = ["ecdsa", "pem"] }
+rand = "0.8"
+rusqlite = { version = "0.31", features = ["bundled"], optional = true }
+
+[[bin]]
+name = "gen_lcx_curl"
+path = "src/bin/gen_lcx_curl.rs"
+required-features = ["rusqlite"]

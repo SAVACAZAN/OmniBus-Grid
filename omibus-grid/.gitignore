@@ -1,0 +1,8 @@
+/target/
+*.tmp
+.DS_Store
+*.log
+__pycache__/
+*.pyc
+ai-worker/runtime/
+ai-worker/python-runtime.zip
